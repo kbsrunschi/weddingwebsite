@@ -82,11 +82,11 @@ body {
 <body>
 <div id="sideNavigation" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About Us!</a>
-  <a href="#">Meet our Wedding Party!</a>
-  <a href="#">Schedule of Events</a>
-  <a href="#">Hotel Blocks & Directions</a>
-  <a href="#">Things to do in Chicago</a>
+  <a><%= link_to "About Us", about_path  %>
+  <a><%= link_to "Meet our wedding party", about_path  %>
+  <a><%= link_to "Schedule of Events", about_path  %>
+  <a><%= link_to "Hotel Blocks & Other Important Info", about_path  %>
+  <a><%= link_to "Things to do in Chicago", about_path  %>
 </div>
 
 <script>
