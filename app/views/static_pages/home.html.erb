@@ -54,11 +54,17 @@ body {
 
 <div id="main">
   <article class="helvetica pb5">
+    <div class="dtc-l v-mid f6 f5-m f4-l measure-l">
+      <p class="measure pv4-l center">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More Info! </span>
+      </p>
+    </div>
     <header class="vh-100 bg-light-pink dt w-100" style="text-align:center">
       <div
         style="background:url(http://mrmrs.io/photos/display.jpg) no-repeat center right;background-size: cover;"
         class="dtc v-mid cover ph3 ph4-m ph5-li">
-        <h1 class="f2 f-subheadline-l measure lh-title fw9">We're getting meowied!</h1>
+        <h1 class="f2 f-subheadline-l measure lh-title fw9">#NotAShotgunWedding</h1>
+        <h2>Introducing the soon-to-be Remingtons!</h2>
         <h2 class="f6 fw6 black">Kathryn & Dushyant</h2>
       </div>
     </header>
@@ -69,11 +75,6 @@ body {
           <div class="dtc-l v-mid mw6 pr3-l">
             <img class="w-100" src="http://mrmrs.io/photos/009.jpg" alt=""/>
           </div>
-          <div class="dtc-l v-mid f6 f5-m f4-l measure-l">
-            <p class="measure pv4-l center">
-              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Give me that sweet information!</span>
-            </p>
-          </div>
         </div>
     </div>
   </article>
@@ -83,10 +84,13 @@ body {
 <div id="sideNavigation" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a><%= link_to "About Us", about_path  %>
-  <a><%= link_to "Meet our wedding party", about_path  %>
-  <a><%= link_to "Schedule of Events", about_path  %>
-  <a><%= link_to "Hotel Blocks & Other Important Info", about_path  %>
-  <a><%= link_to "Things to do in Chicago", about_path  %>
+  <a><%= link_to "Wedding Party", wedding_party_path  %>
+  <a><%= link_to "Schedule of Events", schedule_of_events_path  %>
+  <a><%= link_to "Hindu Weddings", hindu_weddings_path %>
+  <a><%= link_to "Hotel Blocks & Other Important Info", hotels_path  %>
+  <a><%= link_to "Registry", registry_path  %>
+  <a><%= link_to "Things to do in Chicago", tourism_path  %>
+  <a><%= link_to "New last name?! Thats weird!", our_family_path %>
 </div>
 
 <script>
