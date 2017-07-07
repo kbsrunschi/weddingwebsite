@@ -2,6 +2,8 @@
 
 Welcome to the repo for our wedding website!
 
+https://not-a-shotgun-wedding.herokuapp.com
+
 ## Getting started
 
 To get started with the app, clone the repo and then install the needed gems:
