@@ -2,13 +2,88 @@
 <html>
   <head>
     <title><%= yield(:title) %></title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
   </head>
 
   <body>
     <%= yield %>
+    <div id="sideNavigation" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a><%= link_to "Home", home_path %>
+      <a><%= link_to "About Us", about_path  %>
+      <a><%= link_to "Remington?!", our_family_path %>
+      <a><%= link_to "Wedding Party", wedding_party_path  %>
+      <a><%= link_to "Schedule of Events", schedule_of_events_path  %>
+      <a><%= link_to "Hindu Weddings", hindu_weddings_path %>
+      <a><%= link_to "Hotel Blocks & Other Important Info", hotels_path  %>
+      <a><%= link_to "Registry", registry_path  %>
+      <a><%= link_to "Things to do in Chicago", tourism_path  %>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("sideNavigation").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav()  {
+        document.getElementById("sideNavigation").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+
+    </script>
   </body>
 </html>

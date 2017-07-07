@@ -1,108 +1,28 @@
 <% provide(:title, 'Home') %>
 
 <head>
-<style>
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
 </head>
 
-<div id="main">
-  <article class="helvetica pb5">
-    <div class="dtc-l v-mid f6 f5-m f4-l measure-l">
-      <p class="measure pv4-l center">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More Info! </span>
+<div id="main" class="">
+  <article class="pb5">
+    <div class="courier dtc-l v-mid f6 f5-m f4-l measure-l">
+      <p class="pv4-l center">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
       </p>
     </div>
-    <header class="vh-100 bg-light-pink dt w-100" style="text-align:center">
-      <div
-        style="background:url(http://mrmrs.io/photos/display.jpg) no-repeat center right;background-size: cover;"
-        class="dtc v-mid cover ph3 ph4-m ph5-li">
-        <h1 class="f2 f-subheadline-l measure lh-title fw9">#NotAShotgunWedding</h1>
-        <h2>Introducing the soon-to-be Remingtons!</h2>
-        <h2 class="f6 fw6 black">Kathryn & Dushyant</h2>
+    <header class="vh-100 w-100" style="text-align:center">
+      <div class="dtc v-mid cover ph3 ph4-m ph5-li">
+        <h1 class="">Introducing the Remingtons!</h1>
+        <h2>#NotAShotgunWedding</h2>
+        <p class="f6 black">Kathryn & Dushyant's wedding will take place in beautiful Chicago on March 23, 2019.</p>
       </div>
     </header>
     <div class="serif ph3 ph4-m ph5-l">
       <p class="lh-copy f5 f3-m f1-l measure center pv4"></p>
       <div class="f5 f3-m lh-copy">
         <div class="cf dt-l w-100 bt b--black-10 pv4">
-          <div class="dtc-l v-mid mw6 pr3-l">
-            <img class="w-100" src="http://mrmrs.io/photos/009.jpg" alt=""/>
-          </div>
         </div>
     </div>
   </article>
 </div>
 
-<body>
-<div id="sideNavigation" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a><%= link_to "About Us", about_path  %>
-  <a><%= link_to "Wedding Party", wedding_party_path  %>
-  <a><%= link_to "Schedule of Events", schedule_of_events_path  %>
-  <a><%= link_to "Hindu Weddings", hindu_weddings_path %>
-  <a><%= link_to "Hotel Blocks & Other Important Info", hotels_path  %>
-  <a><%= link_to "Registry", registry_path  %>
-  <a><%= link_to "Things to do in Chicago", tourism_path  %>
-  <a><%= link_to "New last name?! Thats weird!", our_family_path %>
-</div>
-
-<script>
-  function openNav() {
-    document.getElementById("sideNavigation").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-
-  function closeNav()  {
-    document.getElementById("sideNavigation").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
-
-</script>
-</body>
