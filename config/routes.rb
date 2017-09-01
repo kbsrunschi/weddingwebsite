@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   get '/schedule_of_events', to: 'static_pages#schedule_of_events'
   get '/our_family', to: 'static_pages#our_family'
   get '/information', to: 'static_pages#information'
-
+  get '/rsvp', to: 'static_pages#rsvp'
 end

@@ -21,3 +21,21 @@ header {
 image {
   width: 100%;
 }
+
+hr {
+  color: black;
+  width: 25%;
+  border-color: #181818;
+}
+
+#aboutus, #weddingParty, #rsvp {
+  background-color: #f9f7f0;
+  div {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+#weddingPartyHeader {
+  font-family: "ProximaNova-Regular", sans-serif;
+}

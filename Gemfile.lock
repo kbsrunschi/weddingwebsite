@@ -53,6 +53,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     erubis (2.7.0)
+    event-calendar (2.3.3)
     execjs (2.7.0)
     ffi (1.9.18)
     formatador (0.2.5)
@@ -195,6 +196,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  event-calendar
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   jbuilder (~> 2.5)
