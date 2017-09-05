@@ -22,13 +22,38 @@ image {
   width: 100%;
 }
 
+.home-image {
+  position: relative;
+}
+
+.home-date {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  width: 100%;
+}
+
+.home-tag {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  width: 100%;
+}
+
+h1 {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 100%;
+}
+
 hr {
   color: black;
   width: 25%;
   border-color: #181818;
 }
 
-#aboutus, #weddingParty, #rsvp {
+#home, #aboutus, #weddingParty, #rsvp {
   background-color: #f9f7f0;
   div {
     text-align: justify;
